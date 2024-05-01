@@ -1,0 +1,147 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+.jersey-10-regular {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+.navbar {
+    background-color: #00000000; /* สีพื้นหลังของ Navbar */
+}
+
+.navbar-brand {
+    background: linear-gradient(to right, #ffe4f4, #dbfbffad); /* Gradient ไล่สี */
+    -webkit-background-clip: text; /* ให้ gradient ถูกตัดตามข้อความ */
+    -webkit-text-fill-color: transparent; /* ทำให้สีข้อความเป็น透ว ่าง หรือไม่มีสี */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* เพิ่มเอฟเฟกต์ glow */
+    font-family: "Jersey 10", sans-serif;
+
+    font-size: 24px; /* ขนาดตัวอักษร */
+    font-weight: bold; /* ตั้งค่าเป็นตัวหนา */
+    text-decoration: none; /* ไม่มีการเส้นใต้ข้อความ */
+    transition: text-shadow 1s; /* เพิ่ม transition ให้กับเอฟเฟกต์ glow */
+}
+
+
+
+.navbar-brand:hover {
+   
+    text-shadow: 0 0px 30px rgba(255, 255, 255, 1); /* เพิ่มเอฟเฟกต์ glow เมื่อโฮเวอร์ */
+}
+
+
+.container-fluid {
+    padding-right: 15px; /* เพิ่มระยะขอบขวาของ container-fluid */
+    padding-left: 15px; /* เพิ่มระยะขอบซ้ายของ container-fluid */
+    margin-right: auto; /* จัดขอบขวาของ container-fluid ให้อยู่กลาง */
+    margin-left: auto; /* จัดขอบซ้ายของ container-fluid ให้อยู่กลาง */
+    color: #fc4bcf; /* สีข้อความของ Navbar Brand */
+}
+
+
+
+
+
+.headphones {
+    position: absolute; /* ตำแหน่งเป็นแบบเกิดสัมพันธ์กับปุ่ม */
+    top: 50%; /* จุดเริ่มต้นของวงกลมอยู่ที่จุดกลางแนวตั้ง */
+    left: 50%; /* จุดเริ่มต้นของวงกลมอยู่ที่จุดกลางแนวนอน */
+    transform: translate(-50%, -50%); /* ย้ายจุดเริ่มต้นของวงกลมไปที่จุดกลางของปุ่ม */
+    width: 40px; /* กว้างของวงกลม */
+    height: 40px; /* สูงของวงกลม */
+    background-color: #ecf5ff0a; /* สีของวงกลม */
+    border-radius: 50%; /* ทำให้รูปร่างเป็นวงกลม */
+    border: none; /* ลบเส้นขอบ */
+    transition: box-shadow 0.5s; /* เพิ่ม transition เพื่อทำให้การเปลี่ยนแปลงเอฟเฟกต์เบลอ */
+}
+
+.headphones:hover {
+    background-color: #ecf5ff2a; /* สีของวงกลม */
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.747); /* เพิ่มเอฟเฟกต์ boxShadow เมื่อโฮเวอร์ */
+    transition: box-shadow 0.2s; /* เพิ่ม transition เพื่อทำให้การเปลี่ยนแปลงเอฟเฟกต์เบลอ */
+    border: none;
+}
+
+.headphones:active {
+    background-color: #0c0c0cd8;
+    transition: background-color 0.3s 0.2s; /* เพิ่ม transition ให้ background-color หน่วงเปลี่ยนสี 0.5 วินาทีหลังจากการกดปุ่ม */
+    box-shadow: 0 0 20px 0 rgba(8, 5, 5, 0.5);
+}
+
+
+
+
+
+
+.fa-music{
+    color: #ffffffd0; /* สีข้อความของ Navbar Brand */
+    
+}
+
+.fa-volume-xmark{
+    color: #ffffffd0; /* สีข้อความของ Navbar Brand */
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+button.navbar-toggler {
+    /* เพิ่ม CSS ที่ต้องการให้กับปุ่ม navbar-toggler ทั้งหมดที่อยู่ในหน้าเว็บของคุณที่มี class "navbar-toggler" */
+    background-color: #e6f2ff25; /* สีพื้นหลัง */
+    color: #ffffff; /* สีของตัวอักษร */
+    font-size: 16px; /* ขนาดของตัวอักษร */
+    border: 2px solid #c9d7e652; /* เส้นขอบ */
+    border-radius: 5px; /* ขอบมน */
+    padding: 10px 20px; /* ขนาดของพื้นที่ในปุ่ม */
+    border-radius: 20px; /* ขอบมน */
+    transition: background-color 0.3s, color 0.3s; /* เพิ่ม transition เพื่อทำให้การเปลี่ยนแปลงสีเบลอ */
+}
+
+button.navbar-toggler:hover {
+    background-color: #e4f1ff5e; /* เมื่อเมาส์ชี้ไปที่ปุ่ม navbar-toggler */
+    color: #fff; /* สีของตัวอักษรเปลี่ยนเป็นขาว */
+  
+}
+
+.offcanvas-header {
+    background-color: rgba(0, 0, 0, 0.027); /* สีพื้นหลังของส่วนหัวของ Offcanvas โปร่งแสง */
+    color: rgba(255, 255, 255, 0.959); /* สีข้อความ */
+}
+
+.offcanvas-body {
+    color: white; /* กำหนดสีข้อความเป็นสีขาว */
+}
+.offcanvas-body .nav-link {
+    color: white; /* กำหนดสีข้อความเป็นสีขาว */
+}
+.offcanvas-body .nav-link.active {
+    color: white; /* กำหนดสีข้อความให้กับลิงก์ที่มีคลาส active */
+}
+
+.nav-item{
+    color: rgb(255, 230, 230); /* สีข้อความ */
+}
+.offcanvas {
+    background-color: rgba(0, 0, 0, 0.11);
+
+    color: rgb(255, 230, 230); /* สีข้อความ */
+}
+
+.nav-item{
+    color: rgb(255, 230, 230); /* สีข้อความ */
+}
